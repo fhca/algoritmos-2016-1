@@ -3,6 +3,7 @@
 Rama de ejemplos hechos principalmente en Python, adaptados del Cormen 3ed.
 
 Ejemplos de adaptaciones:
+
 1. Las listas en Python (en C, en Java, etc.) comienzan en el elemento con
 índice 0 y en el libro empiezan en índice 0, por lo que A[1] en el libro sería
 A[0] en el programa. El chequeo de rango de índices sería i > 0 en el libro y
