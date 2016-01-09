@@ -2,7 +2,7 @@ __author__ = 'fhca'
 
 """ Ordenamiento por inserción. Adaptado del Cormen 3ed, Pag.18"""
 
-def ordenamiento_por_inserción(A):
+def ordenar(A):
     """Algoritmo chafa, sólo utilizar como ejemplo en clase.
     A : una lista de enteros o elementos comparables con '>'. """
     for j in range(1, len(A)): # en Python, como en C, las listas empiezan con índice 0
@@ -24,7 +24,7 @@ if __name__ == '__main__':
 """ Ordenamiento por inserción. Incluye conteo de número de pasos """
 
 pasos = 0
-def ordenamiento_por_inserción2(A):
+def ordenar2(A):
     """Algoritmo chafa, sólo utilizar como ejemplo en clase.
     A : una lista de enteros o elementos comparables con '>'. """
     global pasos
