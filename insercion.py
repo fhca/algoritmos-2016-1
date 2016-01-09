@@ -15,10 +15,11 @@ def ordenamiento_por_inserción(A):
         A[i + 1] = key
     return A
 
-A = [5, 2, 4, 6, 1, 3]
-print("A:", A)
-Aord = ordenamiento_por_inserción(A)
-print("Aord:", Aord)
+if __name__ == '__main__':
+    A = [5, 2, 4, 6, 1, 3]
+    print("A:", A)
+    Aord = ordenamiento_por_inserción(A)
+    print("Aord:", Aord)
 
 """ Ordenamiento por inserción. Incluye conteo de número de pasos """
 
@@ -37,9 +38,10 @@ def ordenamiento_por_inserción2(A):
         A[i + 1] = key ; pasos += 1
     return A
 
-A = [5, 2, 4, 6, 1, 3]
-print("A:", A)
-Aord = ordenamiento_por_inserción2(A)
-print("Aord:", Aord)
-print("Número de pasos:", pasos)
+if __name__ == '__main__':
+    A = [5, 2, 4, 6, 1, 3]
+    print("A:", A)
+    Aord = ordenamiento_por_inserción2(A)
+    print("Aord:", Aord)
+    print("Número de pasos:", pasos)
 
