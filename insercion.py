@@ -49,6 +49,12 @@ def ordenar2(A):
         A[i + 1] = key ; pasos += 1
     return A
 
+""" Pythonadas:
+        if __name__ == '__main__':   Construcción que significa que el bloque que
+        sigue se ejecutará sólo si el programa (este programa) se ejecuta por si
+        sólo, es decir, no se ejecutará si este programa se llama desde otro
+        mediante un 'include' (es, decir, si se llama como módulo).
+"""
 if __name__ == '__main__':
     A = [5, 2, 4, 6, 1, 3]
     print("A:", A)
