@@ -1,4 +1,4 @@
-# Analisis de Algoritmos, UACM, semestre 2016-1
+# Análisis de Algoritmos, UACM, semestre 2016-1
 
 Dr. Felipe Contreras / Felipe.Contreras [arroba] uacm.edu.mx
 
