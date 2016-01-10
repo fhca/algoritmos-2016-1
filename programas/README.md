@@ -6,9 +6,7 @@ clase de esta lista al lenguaje C o Java de tu elección.*
 Orden en que deben verse:
 
 1. insercion.py
-
 1. pruebas_insercion.py
-
 1. ordenamiento_constante.py
 
 
