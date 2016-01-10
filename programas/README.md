@@ -1,12 +1,12 @@
 # Programas de ejemplo para el curso
 
-IMPORTANTE: Como tarea para cada clase, debes traducir el programa visto en
-clase de esta lista al lenguaje C o Java de tu elección.
+*IMPORTANTE: Como tarea para cada clase, debes traducir el programa visto en
+clase de esta lista al lenguaje C o Java de tu elección.*
 
 Orden en que deben verse:
-* insercion.py
-* pruebas_insercion.py
-* ordenamiento_constante.py
+1. insercion.py
+1. pruebas_insercion.py
+1. ordenamiento_constante.py
 
 
 Rama de ejemplos hechos principalmente en Python, adaptados del Cormen 3ed.
