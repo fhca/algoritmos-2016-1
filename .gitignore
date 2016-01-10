@@ -3,4 +3,5 @@
 *.synctex.gz
 *.tex
 libro.pdf
-programas/.idea
+programas/.idea/
+programas/__pycache__/
