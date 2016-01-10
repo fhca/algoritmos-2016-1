@@ -21,5 +21,7 @@ i >= 0 en el programa, etc.
 1. En Python, para indicar un rango de elementos se usan ":", ejemplos:
 
   >A[:] = toda la lista A
+
   >A[1:] = los elementos de la lista A empezando con el de índice 1 "hasta el final"
+
   >A[:5] = los elementos de la lista A desde el principio hasta el de índice 4 ("uno antes que 5")
