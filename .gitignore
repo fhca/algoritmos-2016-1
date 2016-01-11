@@ -1,0 +1,7 @@
+libro.pdf
+*.aux
+*.log
+*.tex
+*.synctex.gz
+programas/.idea/
+
