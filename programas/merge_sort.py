@@ -9,8 +9,9 @@ def merge(A, p, q, r):
         L.append(A[p + i])
     for j in range(n2):
         R.append(A[q + j + 1])
-    # L = A[p : q+1]
-    # R = A[q+1 : r+1]
+    # En Python, las lineas anteriores se pueden escribir como:
+    #   L = A[p : q+1]
+    #   R = A[q+1 : r+1]
     infinito = 1e30  # un número muy grande
     L.append(infinito)
     R.append(infinito)
