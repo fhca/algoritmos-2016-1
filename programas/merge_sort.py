@@ -1,5 +1,6 @@
 __author__ = 'fhca'
 
+
 def merge(A, p, q, r):
     n1 = q - p + 1
     n2 = r - q
@@ -25,6 +26,7 @@ def merge(A, p, q, r):
             A[k] = R[j]
             j += 1
 
+
 def merge_sort(A, p, r):
     if p < r:
         q = (p + r) // 2
@@ -32,10 +34,12 @@ def merge_sort(A, p, r):
         merge_sort(A, q+1, r)
         merge(A, p, q, r)
 
+
 def ordenar(A):
     B = A[:]  # hace una copia, para no modificar A
     merge_sort(B, 0, len(B) - 1)
     return B
+
 
 if __name__ == "__main__":
     A = [2, 4, 5, 7, 1, 2, 3, 6]
