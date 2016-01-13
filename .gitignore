@@ -1,6 +1,9 @@
+# archivos fuente o con copyright de la documentación
 docs/libro.pdf
 docs/*.aux
 docs/*.log
 docs/*.tex
 docs/*.synctex.gz
+
+# archivos propios del IDE (Pycharm)
 programas/.idea/
