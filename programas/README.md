@@ -8,7 +8,7 @@ Orden en que deben verse:
 1. insercion.py
 1. pruebas_insercion.py
 1. ordenamiento_constante.py
-
+1. merge_sort.py
 
 Rama de ejemplos hechos principalmente en Python, adaptados del Cormen 3ed.
 
