@@ -58,7 +58,7 @@ def ordenar2(A):
 if __name__ == '__main__':
     A = [5, 2, 4, 6, 1, 3]
     print("A:", A)
-    Aord = ordenar(A)
+    Aord = ordenar2(A)
     print("Aord:", Aord)
     print("Número de pasos:", pasos)
 
