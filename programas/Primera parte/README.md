@@ -5,11 +5,18 @@ clase de esta lista al lenguaje C o Java de tu elección.*
 
 Orden en que deben verse:
 
-1. insercion.py
-1. pruebas_insercion.py
-1. pruebas_insercion0.py
-1. ordenamiento_constante.py
+1. [insercion.py](insercion.py) (visto el 2 de febrero)
+1. [pruebas_insercion.py](pruebas_insercion.py) (para ver el 4 de febrero)
+1. [pruebas_insercion0.py](pruebas_insercion0.py) (para ver el 4 de febrero)
+1. [ordenamiento_constante.py](ordenamiento_constante.py) (para ver el 4 de febrero)
 1. [merge_sort.py](merge_sort.py)
+1. [pruebas_merge0.py](pruebas_merge0.py)
+
+Programas del examen diagnóstico (2 de febrero):
+
+1. [fibonacci.py](fibonacci.py)
+1. [fibonacci.c](fibonacci.c)
+1. [Fibonacci.java](Fibonacci.java)
 
 Rama de ejemplos hechos principalmente en Python, adaptados del Cormen 3ed.
 
