@@ -21,11 +21,11 @@ def ordenar(A):
         sólo, es decir, no se ejecutará si este programa se llama desde otro
         mediante un 'include' (es, decir, si se llama como módulo).
 """
-if __name__ == '__main__':
-    A = [5, 2, 4, 6, 1, 3]
-    print("A:", A)
-    Aord = ordenar(A)
-    print("Aord:", Aord)
+# if __name__ == '__main__':
+#     A = [5, 2, 4, 6, 1, 3]
+#     print("A:", A)
+#     Aord = ordenar(A)
+#     print("Aord:", Aord)
 
 """ Ordenamiento por inserción. Incluye conteo de número de pasos """
 
@@ -35,7 +35,7 @@ def ordenar2(A):
     A : una lista de enteros o elementos comparables con '>'. """
     """Pythonadas:
             En Python se puede usar ';' para agregar instrucciones a una misma línea
-            creando con ello código espaghetti como en C y similares. En general
+            creando con ello código espagueti como en C y similares. En general
             NO SE RECOMIENDA HACER ESTO.
     """
     global pasos
