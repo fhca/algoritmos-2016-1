@@ -44,6 +44,7 @@ def ordenar2(A):
         # insertar A[j] en la lista ordenada A[0:j]
         i = j - 1 ; pasos += 1
         while i >= 0 and A[i] > key:
+            pasos += 1  # comparación
             A[i + 1] = A[i] ; pasos += 1
             i -= 1 ; pasos += 1
         A[i + 1] = key ; pasos += 1
