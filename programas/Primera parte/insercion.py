@@ -57,7 +57,7 @@ def ordenar2(A):
         mediante un 'include' (es, decir, si se llama como módulo).
 """
 if __name__ == '__main__':
-    A = [5, 2, 4, 6, 1, 3]
+    A = [5, 2, 4, 6, 1, 3, 0]
     print("A:", A)
     Aord = ordenar2(A)
     print("Aord:", Aord)
