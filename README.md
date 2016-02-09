@@ -9,3 +9,4 @@ Contenido:
 * `docs/ing_software.pdf` : Plan de la carrera de Ingeniería de Software
 * `docs/notas de clase.pdf` : Notas de clase que iré actualizando conforme avanza el curso
 * `programas/` : Programas para ver en clase o para revisar en casa
+* `TAREA2.pdf` : Para entregar el 15 de febrero
