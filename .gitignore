@@ -8,7 +8,9 @@
 *.gcx
 # administrativo
 *.tex
+*solucion/
 *solucion/*
 *resultados*
 # archivos propios del IDE (Pycharm)
+.idea/
 .idea/*
