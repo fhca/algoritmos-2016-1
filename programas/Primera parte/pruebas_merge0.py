@@ -1,6 +1,7 @@
 __author__ = 'fhca'
 
 import merge_sort
+import insercion
 from random import randrange
 import time
 
