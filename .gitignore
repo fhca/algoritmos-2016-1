@@ -14,3 +14,7 @@
 # archivos propios del IDE (Pycharm)
 .idea/
 .idea/*
+# archivos propios del IDE (Eclipse)
+.project
+.classpath
+.DS_Store
