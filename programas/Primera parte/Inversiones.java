@@ -20,7 +20,7 @@ public class Inversiones {
 	ArrayList<Inversion> go_cuadratico(){
 		reporta = new ArrayList<Inversion>();
 		for(int i = 0; i < ary.length; i ++){
-			for(int j = i + 1; j < ary.length; j++){
+			for(int j = i + 1; j < ary.length; j ++){
 				if (ary[i] > ary[j]){
 					reporta.add(new Inversion(i,j));
 				}
