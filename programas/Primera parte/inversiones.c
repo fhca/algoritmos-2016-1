@@ -42,7 +42,8 @@ int merge_sort(int A[], int p, int r) {
 }
 
 int main(){
-    int A[] = {1,3,5,7,9, 2,4,6,8,10}
+    /*int A[] = {1,3,5,7,9, 2,4,6,8,10};*/
+    int A[] = {10,9,8,7,6,5,4,3,2,1};
     printf("%d", merge_sort(A, 0, 9));
 }
 
