@@ -2,6 +2,10 @@
 
 Dr. Felipe Contreras / Felipe.Contreras [arroba] uacm.edu.mx
 
+IMPORTANTE:
+
+TAREA 4: "Desrrecursivar" (crear la versión iterativa) del programa `programas/Segunda parte/combinaciones.py`. Para entregar el 8 de abril.
+
 Contenido:
 
 * `README.md` : Este archivo

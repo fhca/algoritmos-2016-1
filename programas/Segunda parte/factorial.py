@@ -6,12 +6,12 @@ def factorial_iterativo(n):
         s *= i
     return s
 
-print(factorial_iterativo(5))
+print(factorial_iterativo(6))
 
 def factorial_recursivo(n):
     if n <= 1:
-        return n
+        return 1
     else:
         return n * factorial_recursivo(n - 1) # recursividad de cola
 
-print(factorial_recursivo(5))
+print(factorial_recursivo(6))
