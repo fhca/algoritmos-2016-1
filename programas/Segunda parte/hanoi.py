@@ -38,3 +38,23 @@ def hanoi(n, a, b, c):
 
 hanoi(3, "A", "B", "C")
 print("".join(s))
+
+def hanoi_iterativa(n, a, b, c):
+    pila = []
+    s = []
+    pila.append(("hanoi", n, a, b, c))
+    while len(pila) > 0:
+        accion, n, a, b, c = pila.pop()
+        if accion == "hanoi":
+            if n == 1:
+                pila.append(("reporta", n, a, b, c))
+            else:
+                pila.append(("hanoi", n - 1, b, a, c))  # se invierten estas
+                pila.append(("reporta", n, a, b, c))    # ... lineas para meterlas
+                pila.append(("hanoi", n - 1, a, c, b))  # ... en la pila.
+        elif accion == "reporta":
+            s.extend((str(n), c))
+    return "".join(s)
+
+print(hanoi_iterativa(3, "A", "B", "C"))
+
