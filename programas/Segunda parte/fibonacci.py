@@ -1,5 +1,5 @@
 
-
+"Versión iterativa de Fibonacci."
 def fib_iterativo(n):
     if n <= 2:
         b = 1
@@ -11,6 +11,7 @@ def fib_iterativo(n):
 
 print(list(fib_iterativo(x) for x in range(1, 20)))
 
+"Versión recursiva de Fibonacci."
 def fib_recursivo(n):
     if n <= 2:
         return 1
