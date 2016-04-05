@@ -18,4 +18,4 @@ def fib_recursivo(n):
     else:
         return fib_recursivo(n - 1) + fib_recursivo(n - 2)  # recursividad de cola
 
-print(list(fib_recursivo(x) for x in range(1, 20)))
+print(list(fib_recursivo(x) for x in range(1, 40)))

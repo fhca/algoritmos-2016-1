@@ -4,7 +4,7 @@ Dr. Felipe Contreras / Felipe.Contreras [arroba] uacm.edu.mx
 
 IMPORTANTE:
 
-TAREA 4: Hacer un rastreo y "desrrecursivar" (crear la versión iterativa) del programa `programas/Segunda parte/combinaciones.py`. Para entregar el 8 de abril.
+TAREA 4: Hacer un rastreo y "desrrecursivar" (crear la versión iterativa) del programa `programas/Segunda parte/combinaciones.py`. Para entregar el 7 de abril.
 
 Contenido:
 
