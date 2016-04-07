@@ -13,10 +13,6 @@ n=5
 for i in range(n + 1):
     print(comb(n, i), "* x ^", n - i, end=" + ")
 
-print()
-n=5
-for i in range(n + 1):
-    print(comb_it(n, i), "* x ^", n - i, end=" + ")
 
 K=8
 print()
@@ -24,13 +20,5 @@ for n in range(K + 1):
     print(" "* (K - n), end="")
     for i in range(n + 1):
         print(comb(n, i), end=" ")
-    print()
-
-K=8
-print()
-for n in range(K + 1):
-    print(" "* (K - n), end="")
-    for i in range(n + 1):
-        print(comb_it(n, i), end=" ")
     print()
 
