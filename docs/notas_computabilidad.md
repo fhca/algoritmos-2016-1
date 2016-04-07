@@ -37,9 +37,9 @@ Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turin
 
 Preguntas: puede una máquina de Turing almacenar información?
 
-Algo que observó Turing es que en la cinta de su máquina podía representar las reglas mismas, con lo cual inventó el concepto de programa almacenado.
+Algo que observó Turing es que en la cinta de su máquina podía representar las reglas mismas, codificando un dicha cinta una máquina de Turing completa, con lo cual inventó el concepto de programa almacenado. (esto sería lo que ahora llamamos "programa" o app)
 
-Al hacer esto, ideo el concepto de máquina universal de Turing, las cuales son máquinas normales de Turing pero cuya entrada es otra máquina de Turing.
+Con esto, ideo el concepto de máquina universal de Turing, las cuales son máquinas normales de Turing pero cuya entrada (programa almacenado) es otra máquina de Turing. (este es el principio de las computadoras actuales)
 
 Alan Turing inventó su máquina para demostrar que existen problemas que no son computables, es decir, que no tienen una solución sistemática o "algorítmica" diríamos actualmente.
 
