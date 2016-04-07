@@ -1,4 +1,5 @@
-Notas de computabilidad.
+# Notas de computabilidad.
+
 
 En un congreso internacional de matemáticas el matemático Hilbert enunció 23 famosos problemas no resueltos hasta ese entonces.
 Entre ellos se contaba con la pregunta que hasta ese momento sólo había sido formulada de manera filosófica de la completez de las matemáticas.
@@ -26,20 +27,22 @@ Para ello definió H(M,I) como la máquina de Turing universal que devolvía "si
 Luego definió otra máquina universal de Turing (H') cuya única entrada era la máquina M y su resultado era "si" en caso de que H(M,M) devolviera "no", y devolvía un ciclo infinito (no terminaba) en caso de que H(M,M) devolviera "si".
 Tomó entonces H'(H'), que es también una máquina de Turing, pero su misma existencia es una contradicción,   pues no puede dar ningún valor. Esto demuestra que la hipótesis de que existía una máquina de Turing "H" no es cierta.
 
+A continuación veremos algunos ejemplos de "programas" que se pueden generar para la máquina de Turing.
+
 En los siguientes ejemplos la cabeza empieza en el 1 mas a la izquierda y el alfabeto es {0,1}…
 
-Ej. Rebota entre dos posiciones: 
-Entrada=(1)
-Tuplas: A00IA, A11DA
+    Ej. Rebota entre dos posiciones: 
+    Entrada=(1)
+    Tuplas: A00IA, A11DA
 
-Ej. Recorre la serie de unos de la entrada de izq a der y de der a izq
-Entrada=(1111111)
-Tuplas: A00IB, A11DA, B00DA, B11IB
+    Ej. Recorre la serie de unos de la entrada de izq a der y de der a izq
+    Entrada=(1111111)
+    Tuplas: A00IB, A11DA, B00DA, B11IB
 
-Ej. Escribir 10101010101…
-Entrada=(0)  "cinta vacía"
-Tuplas: A01DB, B00DA
+    Ej. Escribir 10101010101…
+    Entrada=(0)  "cinta vacía"
+    Tuplas: A01DB, B00DA
 
-Ej. Escribir 110110110…
-Entrada=(0)
-Tuplas: 
+    Ej. Escribir 110110110…
+    Entrada=(0)
+    Tuplas: 
