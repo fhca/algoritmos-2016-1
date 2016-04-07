@@ -11,19 +11,19 @@ Algún tiempo después Goedel respondió a la pregunta de manera negativa, demos
 
 Esto vino a revolucionar la forma de pensar a las matemáticas, base de todas las así llamadas "ciencias puras", ya que implicaba que habrían resultados ciertos pero que no se podrían demostrar.
 
-Siguiendo estos resultados, Alan Turing trabajó en la idea de la "máquina automática", actualmente llamada máquina de Turing.
+Siguiendo estos resultados, Alan Turing trabajó en la idea de la *máquina automática*, actualmente llamada _máquina de Turing_.
 
 Esta consiste en una cinta que se extiende de manera infinita hacia la izquierda y hacia la derecha, dividida transversalmente en celdas o cuadros, en cada celda se puede escribir un solo símbolo dentro de un alfabeto finito de símbolos S.
 
 La cinta es recorrida por una cabeza que lee y puede modificar el símbolo en cada celda, basándose en una tabla finita de reglas o tuplas divididas en una serie de estados en los que la máquina puede caer. 
 
-La cabeza puede recibir las instrucciones "I" o "D", para moverse exactamente una casilla a la izquierda o a la derecha respectivamente. Una variación es usar "N", para no moverse.
+La cabeza puede recibir las instrucciones `I` o `D`, para moverse exactamente una casilla a la izquierda o a la derecha respectivamente. Una variación es usar `N`, para no moverse.
 
 Cada estado describe las posibles acciones a realizar por la cabeza, de encontrarse en la celda actual con alguno de los símbolos del alfabeto.
 
-Dentro del alfabeto se encuentra el símbolo b, llamado "blanco" que es con el que inicialmente se encuentran pobladas todas las celdas de la cinta.
+Dentro del alfabeto se encuentra el símbolo `b`, llamado "blanco" que es con el que inicialmente se encuentran pobladas todas las celdas de la cinta.
 
-Dentro de los estados hay uno que es el primero y uno especial llamado "H" (halt = detenerse)
+Dentro de los estados hay uno que es el primero y uno especial llamado `H` (del inglés *halt* = *detenerse*)
 
 El símbolo blanco es el único que se permite repetirlo de manera infinita en la cinta.
 
@@ -33,7 +33,7 @@ Las tuplas se dividen en cinco campos que originalmente representan en orden: Es
 
 Un ejemplo (el castor ocupado) es el siguiente: la cinta empieza vacía (todas las celdas en blanco), el alfabeto es `{0,1} ; (b=0)` y las tuplas son `(A,0,1,D,B); (A,1,1,I,C); (B,0,1,I,A); (B,1,1,D,B); (C,0,1,I,B); (C,1,1,D,H)`. Esta construye un conjunto (finito) de números uno, y luego de detiene.
 
-Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turing que escriban `n` números "1" consecutivos, para `n=1,2,…,10`.
+Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turing que escriban `n` números `1` consecutivos, para `n=1,2,…,10`.
 
 Preguntas: puede una máquina de Turing almacenar información?
 
