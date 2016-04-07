@@ -11,9 +11,9 @@ Algún tiempo después Goedel respondió a la pregunta de manera negativa, demos
 
 Esto vino a revolucionar la forma de pensar a las matemáticas, base de todas las así llamadas "ciencias puras", ya que implicaba que habrían resultados ciertos pero que no se podrían demostrar.
 
-Siguiendo estos resultados, Alan Turing trabajó en la idea de la *máquina automática*, actualmente llamada _máquina de Turing_.
+Siguiendo estos resultados, Alan Turing trabajó en la idea de la *máquina automática*, actualmente llamada __máquina de Turing__.
 
-Esta consiste en una cinta que se extiende de manera infinita hacia la izquierda y hacia la derecha, dividida transversalmente en celdas o cuadros, en cada celda se puede escribir un solo símbolo dentro de un alfabeto finito de símbolos S.
+Esta consiste en una cinta que se extiende de manera infinita hacia la izquierda y hacia la derecha, dividida transversalmente en celdas o cuadros, en cada celda se puede escribir un solo símbolo dentro de un alfabeto finito de símbolos `S`.
 
 La cinta es recorrida por una cabeza que lee y puede modificar el símbolo en cada celda, basándose en una tabla finita de reglas o tuplas divididas en una serie de estados en los que la máquina puede caer. 
 
@@ -43,7 +43,7 @@ Con esto, ideo el concepto de máquina universal de Turing, las cuales son máqu
 
 Alan Turing inventó su máquina para demostrar que existen problemas que no son computables, es decir, que no tienen una solución sistemática o _algorítmica_ diríamos actualmente.
 
-Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema *HALT*)
+Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema __HALT__)
 
 Para ello definió `H(M,I)` como la máquina de Turing universal que tenía las entradas `M` e `I`, que devolvía `si`, si la máquina de Turing `M` ejecutada con la entrada `I` terminaba, y devolvía `no`, si `M` no terminaba.
 
@@ -53,7 +53,7 @@ Tomó entonces `H'(H')`, que es también una máquina de Turing, pero su misma e
 
 A continuación veremos algunos ejemplos de "programas" que se pueden generar para la máquina de Turing.
 
-En los siguientes ejemplos la cabeza empieza en el 1 mas a la izquierda y el alfabeto es `{0,1}`...
+En los siguientes ejemplos la cabeza empieza en el `1` más a la izquierda, y el alfabeto es `{0,1}`...
 
     Ej. Rebota entre dos posiciones: 
     Entrada=(1)
