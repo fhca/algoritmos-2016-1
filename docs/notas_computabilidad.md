@@ -1,17 +1,17 @@
 # Notas de computabilidad.
 
 
-En un congreso internacional de matemáticas el matemático Hilbert enunció 23 famosos problemas no resueltos hasta ese entonces.
+En un congreso internacional de matemáticas el matemático _Hilbert_ enunció 23 famosos problemas no resueltos hasta ese entonces.
 
 Entre ellos se contaba con la pregunta que hasta ese momento sólo había sido formulada de manera filosófica de la completez de las matemáticas.
 
 Esto es, dado un conjunto de axiomas, con este y las técnicas de toda la matemática conocida hasta entonces, era posible demostrar cualquier nuevo resultado?
 
-Algún tiempo después Goedel respondió a la pregunta de manera negativa, demostrando formalmente que un sistema axiomático si es consistente no puede ser completo y su consistencia no puede ser demostrada dentro del sistema.
+Algún tiempo después _Goedel_ respondió a la pregunta de manera negativa, demostrando formalmente que un sistema axiomático si es consistente no puede ser completo y su consistencia no puede ser demostrada dentro del sistema.
 
 Esto vino a revolucionar la forma de pensar a las matemáticas, base de todas las así llamadas "ciencias puras", ya que implicaba que habrían resultados ciertos pero que no se podrían demostrar.
 
-Siguiendo estos resultados, Alan Turing trabajó en la idea de la *máquina automática*, actualmente llamada __máquina de Turing__.
+Siguiendo estos resultados, _Alan Turing_ trabajó en la idea de la *máquina automática*, actualmente llamada __máquina de Turing__.
 
 Esta consiste en una cinta que se extiende de manera infinita hacia la izquierda y hacia la derecha, dividida transversalmente en celdas o cuadros, en cada celda se puede escribir un solo símbolo dentro de un alfabeto finito de símbolos `S`.
 
