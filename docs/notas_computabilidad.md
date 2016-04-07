@@ -43,7 +43,7 @@ Con esto, ideo el concepto de máquina universal de Turing, las cuales son máqu
 
 Alan Turing inventó su máquina para demostrar que existen problemas que no son computables, es decir, que no tienen una solución sistemática o "algorítmica" diríamos actualmente.
 
-Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable.
+Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema HALT)
 
 Para ello definió H(M,I) como la máquina de Turing universal que devolvía "si" si la máquina de Turing M con la entrada I terminaba, y devolvía "no", si no terminaba.
 
