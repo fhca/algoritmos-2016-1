@@ -31,9 +31,9 @@ La cinta puede comenzar vacía (sólo blancos), o con cierta información inicia
 
 Las tuplas se dividen en cinco campos que originalmente representan en orden: Estado actual, Valor leído, Valor a escribir, Movimiento y Estado siguiente.
 
-Un ejemplo (el castor ocupado) es el siguiente: la cinta empieza vacía (todas las celdas en blanco), el alfabeto es {0,1} ; (b=0) y las tuplas son (A,0,1,D,B); (A,1,1,I,C); (B,0,1,I,A); (B,1,1,D,B); (C,0,1,I,B); (C,1,1,D,H). Esta construye un conjunto (finito) de números uno, y luego de detiene.
+Un ejemplo (el castor ocupado) es el siguiente: la cinta empieza vacía (todas las celdas en blanco), el alfabeto es `{0,1} ; (b=0)` y las tuplas son `(A,0,1,D,B); (A,1,1,I,C); (B,0,1,I,A); (B,1,1,D,B); (C,0,1,I,B); (C,1,1,D,H)`. Esta construye un conjunto (finito) de números uno, y luego de detiene.
 
-Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turing que escriban n números "1" consecutivos, para n=1,2,…,10. 
+Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turing que escriban `n` números "1" consecutivos, para `n=1,2,…,10`.
 
 Preguntas: puede una máquina de Turing almacenar información?
 
@@ -43,17 +43,17 @@ Con esto, ideo el concepto de máquina universal de Turing, las cuales son máqu
 
 Alan Turing inventó su máquina para demostrar que existen problemas que no son computables, es decir, que no tienen una solución sistemática o "algorítmica" diríamos actualmente.
 
-Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema HALT)
+Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema *HALT*)
 
-Para ello definió H(M,I) como la máquina de Turing universal que tenía las entradas M e I, que devolvía "si", si la máquina de Turing M ejecutada con la entrada I terminaba, y devolvía "no", si M no terminaba.
+Para ello definió `H(M,I)` como la máquina de Turing universal que tenía las entradas `M` e `I`, que devolvía `"si"`, si la máquina de Turing `M` ejecutada con la entrada `I` terminaba, y devolvía `"no"`, si `M` no terminaba.
 
-Luego definió otra máquina universal de Turing H'(M) cuya única entrada era la máquina M y su resultado era "si" en caso de que H(M,M) devolviera "no", y devolvía un ciclo infinito (no terminaba) en caso de que H(M,M) devolviera "si".
+Luego definió otra máquina universal de Turing `H'(M)` cuya única entrada era la máquina `M` y su resultado era `"si"` en caso de que `H(M,M)` devolviera `"no"`, y devolvía un ciclo infinito (no terminaba) en caso de que `H(M,M)` devolviera `"si"`.
 
-Tomó entonces H'(H'), que es también una máquina de Turing, pero su misma existencia es una contradicción,   pues no puede dar ningún valor. Esto demuestra que la hipótesis de que existía una máquina de Turing "H" no es cierta.
+Tomó entonces `H'(H')`, que es también una máquina de Turing, pero su misma existencia es una contradicción,  pues no puede dar ningún valor. Esto demuestra que la hipótesis de que existía una máquina de Turing `H`, no es cierta.
 
 A continuación veremos algunos ejemplos de "programas" que se pueden generar para la máquina de Turing.
 
-En los siguientes ejemplos la cabeza empieza en el 1 mas a la izquierda y el alfabeto es {0,1}…
+En los siguientes ejemplos la cabeza empieza en el 1 mas a la izquierda y el alfabeto es `{0,1}`…
 
     Ej. Rebota entre dos posiciones: 
     Entrada=(1)
