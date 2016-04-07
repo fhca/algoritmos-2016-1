@@ -45,9 +45,9 @@ Alan Turing inventó su máquina para demostrar que existen problemas que no son
 
 Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema *HALT*)
 
-Para ello definió `H(M,I)` como la máquina de Turing universal que tenía las entradas `M` e `I`, que devolvía `"si"`, si la máquina de Turing `M` ejecutada con la entrada `I` terminaba, y devolvía `"no"`, si `M` no terminaba.
+Para ello definió `H(M,I)` como la máquina de Turing universal que tenía las entradas `M` e `I`, que devolvía `si`, si la máquina de Turing `M` ejecutada con la entrada `I` terminaba, y devolvía `no`, si `M` no terminaba.
 
-Luego definió otra máquina universal de Turing `H'(M)` cuya única entrada era la máquina `M` y su resultado era `"si"` en caso de que `H(M,M)` devolviera `"no"`, y devolvía un ciclo infinito (no terminaba) en caso de que `H(M,M)` devolviera `"si"`.
+Luego definió otra máquina universal de Turing `H'(M)` cuya única entrada era la máquina `M` y su resultado era `si` en caso de que `H(M,M)` devolviera `no`, y devolvía un ciclo infinito (no terminaba) en caso de que `H(M,M)` devolviera `si`.
 
 Tomó entonces `H'(H')`, que es también una máquina de Turing, pero su misma existencia es una contradicción,  pues no puede dar ningún valor. Esto demuestra que la hipótesis de que existía una máquina de Turing `H`, no es cierta.
 
