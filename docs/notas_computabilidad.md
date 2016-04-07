@@ -41,9 +41,9 @@ Algo que observó Turing es que en la cinta de su máquina podía representar la
 
 Con esto, ideo el concepto de __máquina universal de Turing__, las cuales son máquinas normales de Turing pero cuya entrada (programa almacenado) es otra máquina de Turing. (este es el principio de las computadoras actuales)
 
-Alan Turing inventó su máquina para demostrar que existen problemas que no son computables, es decir, que no tienen una solución sistemática o _algorítmica_ diríamos actualmente.
+Alan Turing inventó su máquina para demostrar que existen problemas que *no son computables*, es decir, que no tienen una solución sistemática o _algorítmica_ diríamos actualmente.
 
-Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es *no computable*. (problema __HALT__)
+Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema __HALT__)
 
 Para ello definió `H(M,I)` como la máquina de Turing universal que tenía las entradas `M` e `I`, que devolvía `si`, si la máquina de Turing `M` ejecutada con la entrada `I` terminaba, y devolvía `no`, si `M` no terminaba.
 
