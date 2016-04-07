@@ -13,27 +13,27 @@ Esto vino a revolucionar la forma de pensar a las matemáticas, base de todas la
 
 Siguiendo estos resultados, _Alan Turing_ trabajó en la idea de la *máquina automática*, actualmente llamada __máquina de Turing__.
 
-Esta consiste en una cinta que se extiende de manera infinita hacia la izquierda y hacia la derecha, dividida transversalmente en celdas o cuadros, en cada celda se puede escribir un solo símbolo dentro de un alfabeto finito de símbolos `S`.
+Esta consiste en una _cinta_ que se extiende de manera infinita hacia la izquierda y hacia la derecha, dividida transversalmente en _celdas_ o _cuadros_, en cada celda se puede escribir un solo _símbolo_ dentro de un _alfabeto_ finito de símbolos `S`.
 
-La cinta es recorrida por una cabeza que lee y puede modificar el símbolo en cada celda, basándose en una tabla finita de reglas o tuplas divididas en una serie de estados en los que la máquina puede caer. 
+La cinta es recorrida por una cabeza que _lee_ y puede _modificar_ el símbolo en cada celda, basándose en una _tabla finita de reglas o tuplas_ divididas en una serie de _estados_ en los que la máquina puede _caer_. 
 
-La cabeza puede recibir las instrucciones `I` o `D`, para moverse exactamente una casilla a la izquierda o a la derecha respectivamente. Una variación es usar `N`, para no moverse.
+La cabeza puede recibir las instrucciones `I` o `D`, para _moverse_ exactamente una casilla a la izquierda o a la derecha respectivamente. Una variación es usar `N`, para _no moverse_.
 
-Cada estado describe las posibles acciones a realizar por la cabeza, de encontrarse en la celda actual con alguno de los símbolos del alfabeto.
+Cada estado describe las posibles _acciones_ a realizar por la cabeza, de encontrarse en la celda actual con alguno de los símbolos del alfabeto.
 
-Dentro del alfabeto se encuentra el símbolo `b`, llamado _blanco_ que es con el que inicialmente se encuentran pobladas todas las celdas de la cinta.
+Dentro del alfabeto se encuentra el símbolo `b`, llamado _blanco_ que es con el que inicialmente se encuentran pobladas todas las celdas de la cinta (a veces en vez de `b` usaremos `0`).
 
-Dentro de los estados hay uno que es el primero y uno especial llamado `H` (del inglés *halt* = *detenerse*)
+Dentro de los estados, hay uno que es el _primero_ y otro especial llamado `H` (del inglés *halt* = *detenerse*)
 
 El símbolo blanco es el único que se permite repetirlo de manera infinita en la cinta.
 
-La cinta puede comenzar vacía (sólo blancos), o con cierta información inicial y la cabeza se sitúa por lo general en el elemento no blanco de mas a la izquierda, de existir.
+La cinta puede comenzar vacía (sólo blancos), o con cierta _información inicial_ y la cabeza se sitúa por lo general en el elemento no blanco de más a la izquierda, de existir.
 
-Las tuplas se dividen en cinco campos que originalmente representan en orden: Estado actual, Valor leído, Valor a escribir, Movimiento y Estado siguiente.
+Las tuplas se dividen en cinco campos que originalmente representan en orden: _Estado actual_, _Valor leído_, _Valor a escribir_, _Movimiento_ y _Estado siguiente_.
 
-Un ejemplo (el castor ocupado) es el siguiente: la cinta empieza vacía (todas las celdas en blanco), el alfabeto es `{0,1} ; (b=0)` y las tuplas son `(A,0,1,D,B); (A,1,1,I,C); (B,0,1,I,A); (B,1,1,D,B); (C,0,1,I,B); (C,1,1,D,H)`. Esta construye un conjunto (finito) de números uno, y luego de detiene.
+Un ejemplo (_el castor ocupado_) es el siguiente: la cinta empieza vacía (todas las celdas en blanco), el alfabeto es `{0,1} ; (b=0)` y las tuplas son `(A,0,1,D,B); (A,1,1,I,C); (B,0,1,I,A); (B,1,1,D,B); (C,0,1,I,B); (C,1,1,D,H)`. Esta construye un conjunto (finito) de números uno, y luego de detiene.
 
-Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turing que escriban `n` números `1` consecutivos, para `n=1,2,…,10`.
+_Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turing que escriban `n` números `1` consecutivos, para `n=1,2,…,10`._
 
 _Pregunta: puede una máquina de Turing almacenar información?_
 
