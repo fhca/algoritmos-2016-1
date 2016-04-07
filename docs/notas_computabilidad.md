@@ -21,7 +21,7 @@ La cabeza puede recibir las instrucciones `I` o `D`, para moverse exactamente un
 
 Cada estado describe las posibles acciones a realizar por la cabeza, de encontrarse en la celda actual con alguno de los símbolos del alfabeto.
 
-Dentro del alfabeto se encuentra el símbolo `b`, llamado "blanco" que es con el que inicialmente se encuentran pobladas todas las celdas de la cinta.
+Dentro del alfabeto se encuentra el símbolo `b`, llamado _blanco_ que es con el que inicialmente se encuentran pobladas todas las celdas de la cinta.
 
 Dentro de los estados hay uno que es el primero y uno especial llamado `H` (del inglés *halt* = *detenerse*)
 
@@ -35,13 +35,13 @@ Un ejemplo (el castor ocupado) es el siguiente: la cinta empieza vacía (todas l
 
 Ejercicios, deducir que hacen las tuplas anteriores; escribir máquinas de Turing que escriban `n` números `1` consecutivos, para `n=1,2,…,10`.
 
-Preguntas: puede una máquina de Turing almacenar información?
+_Pregunta: puede una máquina de Turing almacenar información?_
 
-Algo que observó Turing es que en la cinta de su máquina podía representar las reglas mismas, codificando un dicha cinta una máquina de Turing completa, con lo cual inventó el concepto de programa almacenado. (esto sería lo que ahora llamamos "programa" o app)
+Algo que observó Turing es que en la cinta de su máquina podía representar las reglas mismas, codificando un dicha cinta una máquina de Turing completa, con lo cual inventó el concepto de programa almacenado. (esto sería lo que ahora llamamos _programa_ o _app_)
 
 Con esto, ideo el concepto de máquina universal de Turing, las cuales son máquinas normales de Turing pero cuya entrada (programa almacenado) es otra máquina de Turing. (este es el principio de las computadoras actuales)
 
-Alan Turing inventó su máquina para demostrar que existen problemas que no son computables, es decir, que no tienen una solución sistemática o "algorítmica" diríamos actualmente.
+Alan Turing inventó su máquina para demostrar que existen problemas que no son computables, es decir, que no tienen una solución sistemática o _algorítmica_ diríamos actualmente.
 
 Esto lo logró con ayuda de las máquinas universales, probando que el problema de demostrar que siempre se puede detectar que una máquina de Turing se detiene, es no computable. (problema *HALT*)
 
@@ -53,7 +53,7 @@ Tomó entonces `H'(H')`, que es también una máquina de Turing, pero su misma e
 
 A continuación veremos algunos ejemplos de "programas" que se pueden generar para la máquina de Turing.
 
-En los siguientes ejemplos la cabeza empieza en el 1 mas a la izquierda y el alfabeto es `{0,1}`…
+En los siguientes ejemplos la cabeza empieza en el 1 mas a la izquierda y el alfabeto es `{0,1}`...
 
     Ej. Rebota entre dos posiciones: 
     Entrada=(1)
