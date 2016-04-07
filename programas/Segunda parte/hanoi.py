@@ -49,9 +49,9 @@ def hanoi_iterativa(n, a, b, c):
             if n == 1:
                 pila.append(("reporta", n, a, b, c))
             else:
-                pila.append(("hanoi", n - 1, b, a, c))  # se invierten estas
-                pila.append(("reporta", n, a, b, c))    # ... lineas para meterlas
                 pila.append(("hanoi", n - 1, a, c, b))  # ... en la pila.
+                pila.append(("reporta", n, a, b, c))    # ... lineas para meterlas
+                pila.append(("hanoi", n - 1, b, a, c))  # se invierten estas
         elif accion == "reporta":
             s.extend((str(n), c))
     return "".join(s)
