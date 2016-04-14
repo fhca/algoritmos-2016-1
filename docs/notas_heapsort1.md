@@ -14,10 +14,10 @@ Llamaremos tam(A) a una variable que consideraremos como el último índice del 
 
     raiz = 0 (índice del elemento raiz del árbol binario)
 
-*Propiedad de montículo de máximos*
+## Propiedad de montículo de máximos
     A[padre(i)] >= A[i]   (el padre el mayor que sus hijos, esta utilizaremos en esta explicación)
 
-*Propiedad de montículo de mínimos*
+## Propiedad de montículo de mínimos
     A[padre(i)] <= A[i]  (el padre es menor que sus hijos)
 
     altura(i) = número de aristas del camino más largo de i a una hoja descendiente
