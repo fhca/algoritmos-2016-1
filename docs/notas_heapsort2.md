@@ -57,4 +57,3 @@ O(lg n)
         incrementa_llave(A, tam(A), llave)
 
 Así podemos implementar las operaciones de colas de prioridad con tiempo O(lg n).
- 
