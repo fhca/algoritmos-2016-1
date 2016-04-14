@@ -7,6 +7,10 @@ El uso más importante de las colas de prioridad es en el scheduler o programado
 Con él se agregan procesos a ser trabajados por el procesador, se eliminan si ya se ejecutaron, pero siempre se está
 ejecutando el de máxima prioridad al momento.
 
+Nota: aquí la llave es simplemente el valor del elemento en el arreglo, por supuesto que estos algoritmos se pueden
+implementar para que incluyan otros campos en cada elemento del arreglo, siempre y cuando cada elemento incluya un campo
+llave a revisar.
+
 Una cola de prioridad de máximos debe implementar:
 
     inserta(S, x)
@@ -19,7 +23,8 @@ máximo(S), que muestra el elemento con llave máxima en tiempo O(1), se puede i
     máximo(A):
         devuelve A[raiz]
 
-extrae_max(S) elimina el elemento con máxima llave, es similar al heapsort visto. Nota que usamos mont_max() ya visto. O(lg n).
+extrae_max(S) elimina el elemento con máxima llave, es similar al heapsort visto. Nota que usamos mont_max() ya visto. 
+Recuerde que tam(A) es el índice más grande del montículo. O(lg n).
 
     extrae_max(A):
         si tam(A) < 0
@@ -42,3 +47,13 @@ O(lg n).
             intercambia A[i] con A[padre(i)]
             i = padre(i)
 
+Ahora si podemos agregar el algoritmo para inserta(S, x), primero agregándolo como última hoja (de hecho como último 
+elemento del arreglo) y con llave menos infinito, a fin de corregir esta a su valor correcto con el algoritmo anterior.
+O(lg n)
+
+    inserta(A, llave):
+        tam(A) ++
+        A[tam(A)] = -infinito
+        incrementa_llave(A, tam(A), llave)
+
+Así podemos implementar las operaciones de colas de prioridad con tiempo O(lg n).
