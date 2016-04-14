@@ -20,29 +20,39 @@ Llamaremos tam(A) a una variable que consideraremos como el último índice del 
 ## Propiedad de montículo de mínimos
     A[padre(i)] <= A[i]  (el padre es menor que sus hijos)
 
+También medimos la altura de un nodo, pues de ella depende la complejidad de los algoritmos que aquí veremos...
+
     altura(i) = número de aristas del camino más largo de i a una hoja descendiente
     altura(A) = altura(raiz)
+    
+El siguiente algoritmo devuelve el índice en el que A se hace máxima
 
-imax(A, i, j, k):   # devuelve el índice en el que A se hace máxima
-    i,j,k <= tam(A)  # los índices están en el montículo
-    devuelve el índice m tal que A[m] = max{A[i], A[j], A[k]}
-    (desempates: si A[m]=A[i], devuelve i, si A[i] < A[j] = A[k], devuelve j)
+    imax(A, i, j, k):
+        i,j,k <= tam(A)  # los índices están en el montículo
+        devuelve el índice m tal que A[m] = max{A[i], A[j], A[k]}
+        (desempates: si A[m]=A[i], devuelve i, si A[i] < A[j] = A[k], devuelve j)
 
-mont_max(A, i): # hace cumplir la propiedad de montículo de máximos para una cadena desde i hasta una hoja descendiente
-    m = imax(A, i, izq(i), der(i))
-    si m != i:
-        intercambia(A[i], A[m])
-        mont_max(A, m)  # recursividad de cola, facil de convertir a iteración
+El siguiente algoritmo hace cumplir la propiedad de montículo de máximos para una cadena desde i hasta una hoja descendiente
+ 
+    mont_max(A, i):
+        m = imax(A, i, izq(i), der(i))
+        si m != i:
+            intercambia(A[i], A[m])
+            mont_max(A, m)  # recursividad de cola, facil de convertir a iteración
 
-const_mont_max(A):   #construye un montículo con el arreglo A
-    tam(A) = len(A) - 1
-    para i = padre(tam(A)) ... raiz
-        mont_max(A, i)
+Este algoritmo construye un montículo con el arreglo A
 
-heapsort(A):  # acomoda "in situ" los elementos en orden ascendiente
-    const_mont_max(A)
-    tam(A) = len(A) - 1
-    para i = tam(A) ... 1
-        intercambia(A[raiz], A[i])
-        tam(A) --
-        mont_max(A, raiz)
+    const_mont_max(A):
+        tam(A) = len(A) - 1
+        para i = padre(tam(A)) ... raiz
+            mont_max(A, i)
+
+Por último, heapsort acomoda "in situ" (sin ocupar espacio extra más que O(1) variables) los elementos en orden ascendiente 
+    
+    heapsort(A):
+        const_mont_max(A)
+        tam(A) = len(A) - 1
+        para i = tam(A) ... 1
+            intercambia(A[raiz], A[i])
+            tam(A) --
+            mont_max(A, raiz)
