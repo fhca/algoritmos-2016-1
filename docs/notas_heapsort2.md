@@ -3,6 +3,9 @@
 Una *cola de prioridad* es una estructura para implementar un conjunto S, cuyos elementos tienen asociada una *llave*.
 Como en los montículos, hay *colas de prioridad de máximos* y *de mínimos*.
 Veamos la de máximos, ya que la de mínimos es análoga.
+El uso más importante de las colas de prioridad es en el scheduler o programador de tareas de un sistema operativo.
+Con él se agregan procesos a ser trabajados por el procesador, se eliminan si ya se ejecutaron, pero siempre se está
+ejecutando el de máxima prioridad al momento.
 
 Una cola de prioridad de máximos debe implementar:
 
