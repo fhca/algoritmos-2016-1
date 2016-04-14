@@ -1,4 +1,4 @@
-# Uso de la estructura de montículos para implementación de *colas de prioridad*
+# Uso de la estructura de montículos para una implementación de *colas de prioridad*
 
 Una *cola de prioridad* es una estructura para implementar un conjunto S, cuyos elementos tienen asociada una *llave*.
 Como en los montículos, hay *colas de prioridad de máximos* y *de mínimos*.
