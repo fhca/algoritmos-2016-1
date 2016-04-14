@@ -3,9 +3,9 @@ Notas sobre Heapsort
 (Notación: LxL = piso de x )
 
 Un montículo se puede ver como un arreglo A de longitud len(A) en el que se cumple la propiedad de "montículo de máximos" o la de "montículo de mínimos", que se verán enseguida. El arreglo se puede pensar como un árbol binario casi completo (en su último nivel sólo le faltan, si acaso, los elementos de más a su derecha). Cómo árbol sus índices cumplen:
-padre(i) = L(i-1)/2L
-izq(i) = 2i+1
-der(i) = 2i+2
+ padre(i) = L(i-1)/2L
+ izq(i) = 2i+1
+ der(i) = 2i+2
 
 (Nota: en el Cormen se consideran arreglos que comienzan en índice uno. Aquí utilizo índice cero, aunque podrías también desperdiciar el elemento cero y utilizar los algoritmos del libro, que son un poco más sencillos, en fin, esta es otra forma, para que tengas dos versiones y compares).
 
