@@ -9,11 +9,10 @@ ejecutando el de máxima prioridad al momento.
 
 Una cola de prioridad de máximos debe implementar:
 
-inserta(S, x)
-
-máximo(S)
-extrae_max(S)
-incrementa_llave(S, x, k)
+    inserta(S, x)
+    máximo(S)
+    extrae_max(S)
+    incrementa_llave(S, x, k)
 
 máximo(S), que devuelve el elemento con llave máxima en tiempo O(1), se puede implementar con montículos de la siguiente manera:
 
