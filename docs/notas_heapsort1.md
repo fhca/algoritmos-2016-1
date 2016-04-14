@@ -47,7 +47,7 @@ Este algoritmo construye un montículo con el arreglo A
         para i = padre(tam(A)) ... raiz
             mont_max(A, i)
 
-Por último, heapsort acomoda "in situ" (sin ocupar espacio extra más que O(1) variables) los elementos en orden ascendiente 
+Por último, heapsort acomoda "in situ" (sin ocupar espacio aparte del arreglo, salvo por O(1) variables) los elementos en orden ascendiente 
     
     heapsort(A):
         const_mont_max(A)
