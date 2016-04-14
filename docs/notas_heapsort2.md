@@ -14,12 +14,12 @@ Una cola de prioridad de máximos debe implementar:
     extrae_max(S)
     incrementa_llave(S, x, k)
 
-máximo(S), que devuelve el elemento con llave máxima en tiempo O(1), se puede implementar con montículos de la siguiente manera:
+máximo(S), que muestra el elemento con llave máxima en tiempo O(1), se puede implementar de la siguiente manera:
 
     máximo(A):
         devuelve A[raiz]
 
-extrae_max(S) elimina el elemento con máxima llave, es similar al heapsort visto. O(lg n)
+extrae_max(S) elimina el elemento con máxima llave, es similar al heapsort visto. Nota que usamos mont_max() ya visto. O(lg n).
 
     extrae_max(A):
         si tam(A) < 0
