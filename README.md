@@ -4,6 +4,12 @@ Dr. Felipe Contreras / Felipe.Contreras [arroba] uacm.edu.mx
 
 IMPORTANTE:
 
+TAREA 7: Escribir el programa de Quicksort (con los algoritmos vistos en las notas o en el libro). (21 de abril)
+
+TAREA 6: Escribir el programa de Heapsort (con los algoritmos vistos en las notas o en el libro). (18 de abril)
+
+TAREA 5: Escribir el juego de reglas para el último comportamiento de máquina de turing descrita en las notas. (14 de abril)
+
 TAREA 4: Hacer un rastreo y "desrrecursivar" (crear la versión iterativa) del programa `programas/Segunda parte/combinaciones.py`. Para entregar el 7 de abril.
 
 Contenido:
