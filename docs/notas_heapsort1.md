@@ -4,7 +4,7 @@
 
 Un montículo se puede ver como un arreglo A de longitud len(A) en el que se cumple la propiedad de "montículo de máximos" o la de "montículo de mínimos", que se verán enseguida. El arreglo se puede pensar como un árbol binario casi completo (en su último nivel sólo le faltan, si acaso, los elementos de más a su derecha). Cómo árbol sus índices cumplen:
 
-    padre(i) = L(i-1)/2L
+    padre(i) = \[ \floor{(i-1)/2} \]
     izq(i) = 2i+1
     der(i) = 2i+2
 

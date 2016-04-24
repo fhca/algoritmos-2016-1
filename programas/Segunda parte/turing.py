@@ -39,7 +39,7 @@ muestra_cinta()
 pasos = 0
 while estado_actual != "H":
     pasos +=1
-    if pasos == 1000:
+    if pasos >= 1000:
         print("CICLO INFINITO!!!")
         break
     for cadena in reglas:
