@@ -49,7 +49,7 @@ Ordenamiento-por-conteo(A, B, K):
 11     B[C[A[j]]] = A[j]
 12     C[A[j]] = C[A[j]] - 1
 ```
-![conteo](imagenes/conteo.png "Ejemplo de conteo")
+![conteo](imagenes/conteo.png "Ejemplo de ordenamiento por conteo")
 
 ##Radix sort
 
@@ -60,3 +60,4 @@ Ordenamiento-Radix(A, d):
 1 Para i = 1 hasta d
 2     Use un algoritmo estable para ordenar el arreglo A con el dígito i
 ``` 
+![radix](imagenes/radix-sort.png "Ejemplo de ordenamiento radix")
