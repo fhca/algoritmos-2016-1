@@ -25,7 +25,29 @@ Tomando logaritmos, esto implica que:
 
 Dado que *Heapsort*, *Merge* y otros tardan ``O(n lg n)``, estos se les llama *algoritmos óptimos de comparación*.
 
-Veremos un par de algoritmos que no utilizan la metodología de comparar los elementos a ordenar.
+> A continuación veremos un par de algoritmos que no utilizan la metodología de comparar los elementos a ordenar.
 
 ##Ordenamiento por conteo
-Por supuesto, los datos no pueden ser tan generales como con los anteriores algoritmos (por cierto, hemos usado enteros, pero los elementos del arreglo pueden ser cualquier cosa comparable). Para el caso de ordenamiento por conteo asumimos que los ``n`` elementos a comparar están en el rango ``0`` a ``k``. 
+Por supuesto, los datos no pueden ser tan generales como con los anteriores algoritmos (por cierto, hemos usado estos algoritmos para ordenar enteros, pero los elementos del arreglo pueden ser cualquier cosa comparable).
+
+Para el caso de ordenamiento por conteo asumimos que los ``n`` elementos a comparar son enteros en el rango de ``0`` a ``k``. Cuando ``k=O(n)``, este algoritmo corre en tiempo ``Theta(n)``.
+
+Escencialmente el algoritmo determina la posición de un elemento al contar cuantos elementos a ordenar son mas pequeños que él.
+
+```
+ 1 Sea C[0...k] un arreglo auxiliar
+ 2 for i = 0 hasta k
+ 3     C[i] = 0
+ 4 for j = 0 hasta len(A) - 1
+ 5     C[A[j]] = C[A[j]] + 1
+ 6     ; Ahora C[i] contiene el número de elementos iguales a i
+ 7 for i = 1 hasta k
+ 8     C[i] = C[i] + C[i-1]
+ 9     ; Ahora C[i] contiene el número de elementos menores o iguales a i
+10 for j = len(A) - 1 hasta 0
+11     B[C[A[j]]] = A[j]
+12     C[A[j]] = C[A[j]] - 1
+```
+![conteo](imagenes/conteo.png "Ejemplo de conteo")
+
+##Radix sort
