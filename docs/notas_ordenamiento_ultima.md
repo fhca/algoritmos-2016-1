@@ -30,9 +30,9 @@ Dado que *Heapsort*, *Merge* y otros tardan ``O(n lg n)``, estos se les llama *a
 ##Ordenamiento por conteo
 Por supuesto, los datos no pueden ser tan generales como con los anteriores algoritmos (por cierto, hemos usado estos algoritmos para ordenar enteros, pero los elementos del arreglo pueden ser cualquier cosa comparable).
 
-Para el caso de ordenamiento por conteo asumimos que los ``n`` elementos a comparar son enteros en el rango de ``0`` a ``k``. Cuando ``k=O(n)``, este algoritmo corre en tiempo ``Theta(n)``.
+Para el caso de ordenamiento por conteo asumimos que los ``n`` elementos a comparar son enteros en el rango de ``0`` a ``k``.
 
-Escencialmente el algoritmo determina la posición de un elemento al contar cuantos elementos a ordenar son mas pequeños que él.
+Esencialmente el algoritmo determina la posición de un elemento al contar cuantos elementos a ordenar son mas pequeños que él.
 
 ```
 Ordenamiento-por-conteo(A, B, K):
@@ -51,6 +51,8 @@ Ordenamiento-por-conteo(A, B, K):
 ```
 ![conteo](imagenes/conteo.png "Ejemplo de ordenamiento por conteo")
 
+Este algoritmo en el ciclo de las líneas 2-3 toma tiempo ``Theta(k)``, el ciclo de las líneas 4-5 toma tiempo ``Theta(n)``. El ciclo de las líneas 7-8 toma tiempo ``Theta(k)``, y por último el ciclo de las líneas 10-12 toma tiempo ``Theta(n)``. Así el algoritmo de conteo ocupa un tiempo total de ``Theta(n + k)``. Cuando ``k=O(n)``, este algoritmo corre en tiempo ``Theta(n)``.
+
 ##Radix sort
 
 Sirve para ordenar conjuntos de valores numéricos con la misma cantidad de dígitos. Es análogo a como se ordenan fechas, por ejemplo, ordenando primero los días, y si hay empates se ordenan los meses, y si hay empates se ordenan los años. O como se ordenaría un conjunto de datos con una hoja de cálculo: ordena primero por la columna A, luego por la columna B, luego por la C, etc...
@@ -61,3 +63,9 @@ Ordenamiento-Radix(A, d):
 2     Use un algoritmo estable para ordenar el arreglo A con el dígito i
 ``` 
 ![radix](imagenes/radix-sort.png "Ejemplo de ordenamiento radix")
+
+Dado que en cada columna tenemos que ordenar respecto a un dígito, podemor usar ordenamiento por conteo para ordenar el arreglo. Así, si el arreglo tiene ``n`` elementos a ordenar, para cada dígito tardaremos ``Theta(n + k)``. Así para los ``d`` dígitos tenemos que el ordenamiento Radix se tarda ``Theta(d(n + k))``. Si ``d`` es constante y ``k=O(n)``, tenemos que esta algoritmo se tarda también ``Theta(n)``.
+
+* ¿Cómo se comparan los tiempos de estos algoritmos con los algoritmos basados en comparaciones?
+* ¿Cuánto espacio ocupan?
+* ¿Cuáles serían las implementaciones más eficientes para estos algoritmos?
