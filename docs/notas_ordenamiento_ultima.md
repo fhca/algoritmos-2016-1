@@ -35,19 +35,28 @@ Para el caso de ordenamiento por conteo asumimos que los ``n`` elementos a compa
 Escencialmente el algoritmo determina la posición de un elemento al contar cuantos elementos a ordenar son mas pequeños que él.
 
 ```
+Ordenamiento-por-conteo(A, B, K):
  1 Sea C[0...k] un arreglo auxiliar
- 2 for i = 0 hasta k
+ 2 Para i = 0 hasta k
  3     C[i] = 0
- 4 for j = 0 hasta len(A) - 1
+ 4 Para j = 0 hasta len(A) - 1
  5     C[A[j]] = C[A[j]] + 1
  6     ; Ahora C[i] contiene el número de elementos iguales a i
- 7 for i = 1 hasta k
+ 7 Para i = 1 hasta k
  8     C[i] = C[i] + C[i-1]
  9     ; Ahora C[i] contiene el número de elementos menores o iguales a i
-10 for j = len(A) - 1 hasta 0
+10 Para j = len(A) - 1 hasta 0
 11     B[C[A[j]]] = A[j]
 12     C[A[j]] = C[A[j]] - 1
 ```
 ![conteo](imagenes/conteo.png "Ejemplo de conteo")
 
 ##Radix sort
+
+Sirve para ordenar conjuntos de valores numéricos con la misma cantidad de dígitos. Es análogo a como se ordenan fechas, por ejemplo, ordenando primero los días, y si hay empates se ordenan los meses, y si hay empates se ordenan los años. O como se ordenaría un conjunto de datos con una hoja de cálculo: ordena primero por la columna A, luego por la columna B, luego por la C, etc...
+
+```
+Ordenamiento-Radix(A, d):
+1 Para i = 1 hasta d
+2     Use un algoritmo estable para ordenar el arreglo A con el dígito i
+``` 
