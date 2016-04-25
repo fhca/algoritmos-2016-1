@@ -60,4 +60,4 @@ Ordenamiento-Radix(A, d):
 1 Para i = 1 hasta d
 2     Use un algoritmo estable para ordenar el arreglo A con el dígito i
 ``` 
-![radix](imagenes/radix-sort.png "Ejemplo de ordenamiento radix")
+![radix](imagenes/rs.png "Ejemplo de ordenamiento radix")
