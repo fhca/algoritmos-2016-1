@@ -2,7 +2,11 @@
 
 Dr. Felipe Contreras / Felipe.Contreras [arroba] uacm.edu.mx
 
-IMPORTANTE:
+IMPORTANTE: 
+
+PARCIAL: 2 de mayo, incluye hasta las últimas notas de ordenamiento.
+
+TAREA 8: Hacer una implementación de los algoritmos de ordenamiento por conteo y Radix. (entrega el 2 de mayo)
 
 TAREA 7: Escribir el programa de Quicksort (con los algoritmos vistos en las notas o en el libro). (21 de abril)
 
