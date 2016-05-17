@@ -21,14 +21,12 @@ class Gráfica:
 		return str(self.estructura)
 
 	def cadenad(self, cad):
-        self.m += len(cad) - 1
 		for a in zip(cad, cad[1:]):
-			self.aristad(a[0], a[1])
+			self.aristad(*a)
 
 	def cadena(self, cad):
-        self.m += len(cad) - 1
 		for a in zip(cad, cad[1:]):
-			self.arista(a[0], a[1])
+			self.arista(*a)
 
     def cuenta_aristas(self):
         if self.m == 0:  # sólo si no se ha inicializado self.m
@@ -42,6 +40,19 @@ class Gráfica:
 class ColaP:
     def __init__(self):
         self.estructura = []
+
+    def padre(self, i):
+        return (i-1)//2
+
+    def izq(self, i):
+        return 2*i+1
+
+    def der(self, i):
+        return 2*i+2
+
+    def agrega(self, nodo):
+        self.estructura.append(nodo)
+
 
 casita = Gráfica(5)
 print(casita)
