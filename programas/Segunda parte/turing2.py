@@ -61,7 +61,7 @@ class Turing:
         pasos = 0
         infinito = 1000
         self.muestra_cinta()
-        while self.estado_actual != "H":
+        while not self.estado_actual in "HRP" : # "estados de salida"
             pasos += 1
             if pasos >= infinito:
                 print("CICLO INFINITO!!!")
@@ -90,4 +90,9 @@ class Turing:
 "110110110..."
 #Turing(["A01DB", "B01DC", "C00DA"]).anima()
 "unifica:   1000010001 -> 111111111"
-Turing(["A00DA", "A11IB", "B01IB", "BbbDC", "C11DC", "C01DA", "CbbNH", "B11DC", "AbbIB"], "10000010000100100000011").anima()
+#Turing(["A00DA", "A11IB", "B01IB", "BbbDC", "C11DC", "C01DA", "CbbNH", "B11DC", "AbbIB"], "10000010000100100000011").anima()
+
+"palindromo"
+Turing(["A0bDB", "B00DB", "B11DB", "BbbIC", "C0bID", "C11SR", "CbbSP",
+        "D00ID", "D11ID", "DbbDA", "A1bDE", "E00DE", "E11DE", "EbbIF",
+        "F1bID", "F00SR", "AbbSP", "FbbSP"], "01101").anima() #F=no, P=si es palíndromo
